@@ -6,6 +6,10 @@
     <version>1.0</version>
     <packaging>jar</packaging>
 
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>A Java tag library with CMS components for the Google App Engine</description>
+    <url>https://github.com/hepisec/gaecms-taglib</url>    
+
     <licenses>
         <license>
             <name>MIT License</name>
@@ -21,6 +25,12 @@
             <organizationUrl>https://www.hepisec.de</organizationUrl>
         </developer>
     </developers>    
+
+    <scm>
+        <connection>scm:git:git://github.com/hepisec/gaecms-taglib.git</connection>
+        <developerConnection>scm:git:ssh://github.com:hepisec/gaecms-taglib.git</developerConnection>
+        <url>https://github.com/hepisec/gaecms-taglib/tree/master</url>
+    </scm>    
 
     <distributionManagement>
         <snapshotRepository>
