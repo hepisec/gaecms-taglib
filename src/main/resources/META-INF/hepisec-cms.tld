@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+    <tlib-version>1.0</tlib-version>
+    <short-name>cms</short-name>
+    <uri>https://www.hepisec.de/taglib/cms</uri>
+    <tag>
+        <name>EditableContent</name>
+        <tag-class>de.hepisec.taglib.cms.EditableContent</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>id</name>
+            <required>true</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>bucket</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>mode</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.String</type>
+            <description>Use either "plain", "inline", "html" or "markdown"
+            
+                Default mode: "plain"</description>
+        </attribute>
+    </tag>
+    <tag>
+        <name>MediaFile</name>
+        <tag-class>de.hepisec.taglib.cms.MediaFile</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>blobid</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>bucket</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+    <tag>
+        <name>ExternalScript</name>
+        <tag-class>de.hepisec.taglib.cms.ExternalScript</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>script</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>print</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.Boolean</type>
+        </attribute>
+    </tag>
+</taglib>
